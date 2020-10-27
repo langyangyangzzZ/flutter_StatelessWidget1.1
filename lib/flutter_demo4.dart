@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//StatelessWidget与基础组件
 class Flutter_Demo4 extends StatelessWidget {
   int mChipIndex = 0;
 

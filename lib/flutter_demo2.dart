@@ -201,7 +201,7 @@ class _Flutter_Demo2State extends State<Flutter_Demo2> {
   }
 
   Future<Null> initRefresh() async {
-    await Future.delayed(new Duration(milliseconds: 1000)); //刷新4s
+    await Future.delayed(new Duration(milliseconds: 1000)); //刷新1s
     return null;
   }
 

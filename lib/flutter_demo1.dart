@@ -13,6 +13,7 @@ class Flutter_Demo1 extends StatelessWidget {
         appBar: AppBar(
           title: Text("FlutterDemo1"),
         ),
+
         body: Container(
             decoration: BoxDecoration(color: Colors.white),
             alignment: Alignment.center,
