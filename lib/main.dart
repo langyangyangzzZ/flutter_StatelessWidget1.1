@@ -4,6 +4,7 @@ import 'package:flutterapp/flutter_demo2.dart';
 import 'package:flutterapp/flutter_demo3.dart';
 import 'package:flutterapp/flutter_demo4.dart';
 import 'package:flutterapp/flutter_demo5.dart';
+import 'package:flutterapp/flutter_demo6.dart';
 
 
 void main() => runApp(MyApp());
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         "flutter_demo3": (BuildContext content) => Flutter_Demo3(),
         "flutter_demo4": (BuildContext content) => Flutter_Demo4(),
         "flutter_demo5": (BuildContext content) => Flutter_Demo5(),
+        "flutter_demo6": (BuildContext content) => Flutter_Demo6(),
       },
     );
   }
@@ -62,8 +64,9 @@ class _MainHomePageState extends State<MainHomePage> {
           ButtonItem("Flutter_Demo1", Flutter_Demo1(), "flutter_demo1"),
           ButtonItem("Flutter_Demo2", Flutter_Demo2(), "flutter_demo2"),
           ButtonItem("Flutter_Demo3", Flutter_Demo3(), "flutter_demo3"),
-          ButtonItem("Flutter_Demo4", Flutter_Demo4(), "flutter_demo4"),
-          ButtonItem("Flutter_Demo5", Flutter_Demo5(), "flutter_demo5"),
+          ButtonItem("StatelessWidget与基础组件", Flutter_Demo4(), "flutter_demo4"),
+          ButtonItem("StatefluWidget与基础组件", Flutter_Demo5(), "flutter_demo5"),
+          ButtonItem("如何进行Flutter布局开发", Flutter_Demo6(), "flutter_demo6"),
 
         ],
       ),

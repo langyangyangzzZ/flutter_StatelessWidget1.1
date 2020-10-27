@@ -96,7 +96,12 @@ class _Flutter_Demo5State extends State<Flutter_Demo5> {
             ],
           ),
           appBar: AppBar(
-            leading: Icon(Icons.arrow_back),
+            leading: GestureDetector(
+              child: Icon(Icons.arrow_back),
+              onTap: (){
+                Navigator.pop(context);
+              },
+            ),
 
             //此按钮会和draw按钮重复
 

@@ -54,6 +54,11 @@ class Flutter_Demo1 extends StatelessWidget {
                 AlertDialog(
                   title: Text("AlertDialog弹框"),
                   content: Text("AlertDialog弹框"),
+                ),
+                Expanded(
+                  child: Container(
+                    color: Colors.red,
+                  ),
                 )
               ],
             )),
