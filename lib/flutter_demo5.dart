@@ -51,6 +51,7 @@ class _Flutter_Demo5State extends State<Flutter_Demo5> {
           //AppBar标题是否显示完整 默认是true
           floatingActionButton: FloatingActionButton(
             child: Text("点我"),
+
           ),
           bottomSheet: Text("bottomSheet"),
           endDrawer: Container(

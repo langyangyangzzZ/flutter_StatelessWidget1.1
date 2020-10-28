@@ -25,13 +25,15 @@ class MyApp extends StatelessWidget {
         ),
         body: MainHomePage(),
       ),
-      routes: <String, WidgetBuilder>{
+      routes: <String, WidgetBuilder>{//声明路由
         "flutter_demo1": (BuildContext content) => Flutter_Demo1(),
         "flutter_demo2": (BuildContext content) => Flutter_Demo2(),
         "flutter_demo3": (BuildContext content) => Flutter_Demo3(),
         "flutter_demo4": (BuildContext content) => Flutter_Demo4(),
         "flutter_demo5": (BuildContext content) => Flutter_Demo5(),
-        "flutter_demo6": (BuildContext content) => Flutter_Demo6(),
+        "flutter_demo6": (BuildContext content) {
+           return Flutter_Demo6();
+        },
       },
     );
   }
@@ -53,8 +55,17 @@ class _MainHomePageState extends State<MainHomePage> {
         children: <Widget>[
         SwitchListTile(
             title: Text('${isByName?'':'不'}是否开启路由'),
-            value: isByName,
-            onChanged: (value) {
+            value: isByName,//是否选中
+            subtitle: Text("副标题"),//副标题
+            dense: true,//是否垂直密集居中 默认false
+          activeColor: Colors.black,//选中时滑动小球颜色
+          activeTrackColor: Colors.yellow,//选中时滑道颜色
+          inactiveThumbColor: Colors.red,//未选中时滑动小球颜色
+          inactiveTrackColor: Colors.deepPurple,//未选中时滑道颜色
+
+          secondary: Icon(Icons.android),//左边图片
+          selected: true,//副标题 左边图片跟随activeColor颜色变化
+            onChanged: (value) {//响应事件
               setState(() {
                 print(("SZJsetState"));
                 isByName = value;

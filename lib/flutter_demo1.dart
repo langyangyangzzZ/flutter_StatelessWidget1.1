@@ -12,6 +12,14 @@ class Flutter_Demo1 extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("FlutterDemo1"),
+          leading: GestureDetector(//手势响应
+            onTap: (){
+              Navigator.pop(context);//返回上衣页面
+
+            },
+            child: Icon(Icons.arrow_back),
+
+          ),
         ),
 
         body: Container(
