@@ -5,6 +5,7 @@ import 'package:flutterapp/flutter_demo3.dart';
 import 'package:flutterapp/flutter_demo4.dart';
 import 'package:flutterapp/flutter_demo5.dart';
 import 'package:flutterapp/flutter_demo6.dart';
+import 'package:flutterapp/flutter_demo7.dart';
 
 
 void main() => runApp(MyApp());
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         "flutter_demo3": (BuildContext content) => Flutter_Demo3(),
         "flutter_demo4": (BuildContext content) => Flutter_Demo4(),
         "flutter_demo5": (BuildContext content) => Flutter_Demo5(),
+        "flutter_demo7": (BuildContext content) => Flutter_Demo7(),
         "flutter_demo6": (BuildContext content) {
            return Flutter_Demo6();
         },
@@ -78,6 +80,7 @@ class _MainHomePageState extends State<MainHomePage> {
           ButtonItem("StatelessWidget与基础组件", Flutter_Demo4(), "flutter_demo4"),
           ButtonItem("StatefluWidget与基础组件", Flutter_Demo5(), "flutter_demo5"),
           ButtonItem("如何进行Flutter布局开发", Flutter_Demo6(), "flutter_demo6"),
+          ButtonItem("如何进行Flutter手势点击事件监听", Flutter_Demo7(), "flutter_demo7"),
 
         ],
       ),
