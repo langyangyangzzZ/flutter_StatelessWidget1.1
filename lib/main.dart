@@ -6,6 +6,8 @@ import 'package:flutterapp/flutter_demo4.dart';
 import 'package:flutterapp/flutter_demo5.dart';
 import 'package:flutterapp/flutter_demo6.dart';
 import 'package:flutterapp/flutter_demo7.dart';
+import 'package:flutterapp/flutter_demo8.dart';
+import 'package:flutterapp/flutter_demo9.dart';
 
 
 void main() => runApp(MyApp());
@@ -33,6 +35,8 @@ class MyApp extends StatelessWidget {
         "flutter_demo4": (BuildContext content) => Flutter_Demo4(),
         "flutter_demo5": (BuildContext content) => Flutter_Demo5(),
         "flutter_demo7": (BuildContext content) => Flutter_Demo7(),
+        "flutter_demo8": (BuildContext content) => Flutter_Demo8(),
+        "flutter_demo9": (BuildContext content) => Flutter_Demo9(),
         "flutter_demo6": (BuildContext content) {
            return Flutter_Demo6();
         },
@@ -81,6 +85,9 @@ class _MainHomePageState extends State<MainHomePage> {
           ButtonItem("StatefluWidget与基础组件", Flutter_Demo5(), "flutter_demo5"),
           ButtonItem("如何进行Flutter布局开发", Flutter_Demo6(), "flutter_demo6"),
           ButtonItem("如何进行Flutter手势点击事件监听", Flutter_Demo7(), "flutter_demo7"),
+          ButtonItem("如何打开第三方应用", Flutter_Demo8(), "flutter_demo8"),
+          ButtonItem("Flutter Widget声明周期以及应用声明周期", Flutter_Demo9(), "flutter_demo9"),
+
 
         ],
       ),
